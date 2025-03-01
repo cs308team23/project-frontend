@@ -14,7 +14,7 @@ RUN npm run build
 # Stage 2: Run
 FROM node:22.14-alpine AS runner
 WORKDIR /app
-ENV NODE_ENV=production
+ENV NODE_ENV=${NODE_ENV}
 
 # Copy only the necessary files from the builder stage
 COPY --from=builder /app/package.json ./
