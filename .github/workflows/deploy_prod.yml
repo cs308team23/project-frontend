@@ -20,4 +20,4 @@ jobs:
 
       - name: Deploy Docker Compose Prod
         run: |
-          docker-compose -f docker-compose.prod.yml up --build -d
+          docker compose -f docker-compose.prod.yml up --build -d
