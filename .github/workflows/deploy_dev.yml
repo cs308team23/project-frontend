@@ -1,0 +1,23 @@
+name: Deploy to Dev Environment
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.2.2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3.10.0
+
+      - name: Set up Docker Compose
+        uses: docker/setup-compose-action@v1.2.0
+
+      - name: Deploy Docker Compose Dev
+        run: |
+          docker-compose -f docker-compose.dev.yml up --build -d
