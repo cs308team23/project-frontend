@@ -37,7 +37,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
->>>>>>> 89f7024 (Initial commit from Create Next App)
 
 # VS Code files
 .vscode/
