@@ -1,0 +1,21 @@
+# Ignore host's Node.js modules
+node_modules
+
+# Ignore Git files
+.git
+.gitignore
+
+# Ignore build artifacts
+.next
+# Ignore test coverage reports
+coverage
+
+# Ignore debug logs
+npm-debug.log*
+
+# Ignore IDE-related files
+.vscode/
+.idea/
+
+# Ignore Markdown files
+*.md
